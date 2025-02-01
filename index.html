@@ -1,1 +1,97 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 300px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .show {
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <label for="value1">Value 1:</label>
+            <input type="number" id="value1">
+        </div>
+        
+        <div class="input-group">
+            <label for="value2">Value 2:</label>
+            <input type="number" id="value2">
+        </div>
+
+        <button onclick="showMessage()">Calculate</button>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        function showMessage() {
+            const value1 = document.getElementById('value1').value;
+            const value2 = document.getElementById('value2').value;
+            const resultDiv = document.getElementById('result');
+
+            // Simple validation
+            if (value1 === '' || value2 === '') {
+                resultDiv.textContent = "Please enter both values!";
+                resultDiv.classList.add('show');
+                return;
+            }
+
+            // If valid numbers, show "Hello World"
+            resultDiv.textContent = "Hello World";
+            resultDiv.classList.add('show');
+        }
+    </script>
+</body>
+</html>
