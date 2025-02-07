@@ -1,7 +1,6 @@
 import shuumopfp from '/shuumopfp.jpg'
 import './App.css'
 
-import { Spacer } from "./components/spacer"
 import ProjectCard from "./components/ProjectCard.tsx"
 
 
@@ -10,13 +9,13 @@ function App() {
 
     return (
       <>
-        <div class="initial">
+        <div className="initial">
         <div>
           <a href="https://github.com/shuumo" target="_blank">
             <img src={shuumopfp} className="logo" alt="Shuumo logo" />
           </a>
         </div>
-        <h1>⚡ Shuumos Showcase Site 🔥</h1>
+        <h1>Shuumos Showcase Site</h1>
         <p> This site contains some of the projects I've been working on.</p> 
         <p className="read-the-docs">
           Arnav "Shuumo" Singh
@@ -24,7 +23,7 @@ function App() {
           Software Engineer in the making from Sydney, Australia.
         </p>
         </div> 
-        <ProjectCard class="card" title="Test Card" description={pswdmgerDescription} img="path"/>
+        <ProjectCard title="Test Card" description={pswdmgerDescription} img="path"/>
       </>
     )
 }
