@@ -1,28 +1,32 @@
-import { useState } from 'react'
 import shuumopfp from '/shuumopfp.jpg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Spacer } from "./components/spacer"
+import ProjectCard from "./components/ProjectCard.tsx"
 
-  return (
-    <>
-      <div>
-        <a href="https://github.com/shuumo" target="_blank">
-          <img src={shuumopfp} className="logo" alt="Shuumo logo" />
-        </a>
-      </div>
-      <h1>Shuumos Portfolio Site 🔥</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <p className="read-the-docs">
-        Arnav "Shuumo" S.
-      </p>
-    </>
-  )
+
+function App() {
+    let pswdmgerDescription = "hello world";
+
+    return (
+      <>
+        <div class="initial">
+        <div>
+          <a href="https://github.com/shuumo" target="_blank">
+            <img src={shuumopfp} className="logo" alt="Shuumo logo" />
+          </a>
+        </div>
+        <h1>⚡ Shuumos Showcase Site 🔥</h1>
+        <p> This site contains some of the projects I've been working on.</p> 
+        <p className="read-the-docs">
+          Arnav "Shuumo" Singh
+          <br/>
+          Software Engineer in the making from Sydney, Australia.
+        </p>
+        </div> 
+        <ProjectCard class="card" title="Test Card" description={pswdmgerDescription} img="path"/>
+      </>
+    )
 }
 
 export default App

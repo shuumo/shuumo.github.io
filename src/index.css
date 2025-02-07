@@ -5,12 +5,24 @@
 
   color-scheme: light dark;
   color: #cdd6f4;
-  background-color: #1e1e2e;
+  background-color: #181825;
+    
+  padding: 0; margin: 0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.initial {
+    top: 0; right: 0; bottom: 0; left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1e1e2e;
+    min-height: 100vh;
+    overflow: scroll;
+    border-bottom: 2px solid #cdd6f4;
 }
 
 a {
@@ -23,7 +35,7 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  padding: 0; margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;

@@ -1,0 +1,21 @@
+.projectcard {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.innercard {
+    transition: filter 300ms;
+    background-color: #1e1e2e;
+    border: 1px solid #cdd6f4;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.innercard:hover {
+    filter: drop-shadow(0 0 2em #cba6f7aa);
+}
