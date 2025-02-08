@@ -7,15 +7,19 @@ import "./CardImage.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function CardImages() {
+type prp = {
+    image_paths: string[];
+}
+
+function CardImages(props : prp) {
    const settings: Settings = {
-    dots: false,
+    dots: true,
     lazyLoad: "progressive",
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 1,
+    initialSlide: 0,
     centerMode: true,
     variableWidth: false,
     centerPadding: "0px"
@@ -24,18 +28,11 @@ function CardImages() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div className="ImgSlide" >
-          <img src={shuumopfp}/>
-        </div>
-        <div className="ImgSlide">
-          <img src={shuumopfp}/>
-        </div>
-        <div className="ImgSlide">
-          <img src={shuumopfp}/>
-        </div>
-        <div className="ImgSlide">
-          <img src={shuumopfp}/>
-        </div>
+            {props.image_paths.map((imgpath: string, i) => (
+            <div key={i} className="ImgSlide">
+                <img src={imgpath}/>
+            </div>
+        ))}
       </Slider>
     </div>
   );

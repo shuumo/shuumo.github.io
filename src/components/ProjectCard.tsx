@@ -7,6 +7,7 @@ type prp = {
     img: string;
     href: string;
     tools: string; 
+    image_paths: string[];
 }
 
 
@@ -19,7 +20,7 @@ function ProjectCard(props : prp) {
                     <h2>{props.description}</h2>
                 </div>  
                 <div className="imgdiv">
-                   <CardImages></CardImages> 
+                   <CardImages image_paths={props.image_paths}></CardImages> 
                 </div>
                 <div className="toolsdiv">
                     <h2>Tools: {props.tools}</h2>
