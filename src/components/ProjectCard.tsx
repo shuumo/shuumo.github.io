@@ -5,6 +5,7 @@ type prp = {
     description: string;
     img: string;
     href: string;
+    tools: string;
 }
 
 
@@ -17,8 +18,11 @@ function ProjectCard(props : prp) {
                     <h2>{props.description}</h2>
                 </div>  
                 <div className="imgdiv">
-                    image
+                    screenshots of program 
                 </div>
+                <div className="textdiv">
+                    <h2>Tools: {props.tools}</h2>
+                </div> 
             </div>
         </div> 
     );
