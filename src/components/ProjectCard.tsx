@@ -1,11 +1,12 @@
 import './ProjectCard.css';
+import CardImages from './CardImage.tsx' 
 
 type prp = {
     title: string;
     description: string;
     img: string;
     href: string;
-    tools: string;
+    tools: string; 
 }
 
 
@@ -18,9 +19,9 @@ function ProjectCard(props : prp) {
                     <h2>{props.description}</h2>
                 </div>  
                 <div className="imgdiv">
-                    screenshots of program 
+                   <CardImages></CardImages> 
                 </div>
-                <div className="textdiv">
+                <div className="toolsdiv">
                     <h2>Tools: {props.tools}</h2>
                 </div> 
             </div>

@@ -10,6 +10,8 @@ let dummydescl = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 
 function App() {
 
+    
+
     return (
       <>
         <div className="initial">
@@ -29,7 +31,7 @@ function App() {
         </div> 
         <ProjectCard href="https://github.com/shuumo/password_manager" title="Password Vault" description={pswdmgerDescription} img="path" tools="C++17, Qt6, Libsodium, CMake"/>
         <ProjectCard href="https://github.com/shuumo/password_manager" title="Crypto Data Aggregator" description={dummydesc} img="path" tools="C++21, CMake"/>
-        <ProjectCard href="https://github.com/shuumo/password_manager" title={"Crafting Interpretors:\n Lox Compiler and Interpretor"} description={dummydescl} img="path" tools=""/>
+        <ProjectCard href="https://github.com/shuumo/password_manager" title={"TEST CARD FOR DYNAMIC SIZING?!?!?!??!???!?!?!?!??!?!"} description={dummydescl} img="path" tools=""/>
       </>
     )
 }

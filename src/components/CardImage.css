@@ -1,0 +1,25 @@
+.slider-container {
+  margin: 0 auto;
+  padding: 0 10vw;
+  box-sizing: border-box;
+}
+
+.ImgSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImgSlide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+

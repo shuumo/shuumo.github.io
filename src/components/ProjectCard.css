@@ -19,14 +19,8 @@
 }
 
 .imgdiv {
-    border: 1px solid #ffffff;
-    height: 60%;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20%;
-    margin-bottom: 5%;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
 }
 
 .textdiv {
