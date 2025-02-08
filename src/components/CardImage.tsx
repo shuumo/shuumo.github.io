@@ -1,5 +1,4 @@
 import shuumopfp from '/img4.png'
-import React, { Component } from "react";
 import Slider from "react-slick";
 
 import type { Settings } from "react-slick";
