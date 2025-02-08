@@ -17,7 +17,7 @@
   height: 15vw;
   padding: 1.5em;
   transition: filter 300ms;
-  border-radius: 1%;
+  border-radius: 30%;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #cba6f7aa);
