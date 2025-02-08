@@ -1,4 +1,4 @@
-import shuumopfp from '/shuumopfp.jpg'
+import shuumopfp from '/img4.png'
 import React, { Component } from "react";
 import Slider from "react-slick";
 
