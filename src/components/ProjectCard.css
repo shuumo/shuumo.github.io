@@ -1,6 +1,7 @@
 .projectcard {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     position: relative;
     justify-content: center;
@@ -12,8 +13,26 @@
     background-color: #1e1e2e;
     border: 1px solid #cdd6f4;
     width: 80%;
-    height: 80%;
-    margin: auto;
+    min-height: 80vh;
+    height: auto;
+    margin: 10vw;
+}
+
+.imgdiv {
+    border: 1px solid #ffffff;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.textdiv {
+    font-size: 70%;
+    margin: 7em; 
+    margin-top: -2.5em; 
 }
 
 .innercard:hover {

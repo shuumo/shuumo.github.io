@@ -27,11 +27,30 @@
 
 a {
   font-weight: 500;
-  color: #458588;
+  color: #cba6f7;
+
   text-decoration: inherit;
+  will-change: filter;
+  animation-name: shrink;
+  animation-duration: 0.3s;
+  transition: filter 300ms;
 }
+
 a:hover {
-  color: #458588;
+  color:  #cbc7ff;
+  animation-name: enlarge;
+  animation-duration: 0.6s;
+  font-size: 120%;
+}
+
+@keyframes shrink {
+  from {font-size: 120%;}
+  to {font-size: 100%;}
+}
+
+@keyframes enlarge {
+  from {font-size: 100%;}
+  to {font-size: 120%;}
 }
 
 body {
